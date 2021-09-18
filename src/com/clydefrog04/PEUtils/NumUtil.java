@@ -101,6 +101,15 @@ public class NumUtil {
         return (long) nthFib;
     }
 
+    public boolean isPythagoreanTriplet(int a, int b, int c){
+        if(a > b) return false;
+        if(b > c) return false;
+        int a2 = (int)Math.pow(a, 2);
+        int b2 = (int)Math.pow(b, 2);
+        int c2 = (int)Math.pow(c, 2);
+        return a2 + b2 == c2;
+    }
+
     public long prodFromDigits(String n){
         long prod = 1;
         for (int i = 0; i < n.length(); i++) {
