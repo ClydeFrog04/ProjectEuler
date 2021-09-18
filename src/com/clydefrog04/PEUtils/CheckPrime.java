@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @deprecated
+ * This class has been replaced by NumUtil.
+ * NumUtil was written to be a more generic number utility,
+ * while this class was written only to check for primes
+ */
 public class CheckPrime {
 
     private List<Integer> sieve;
