@@ -51,9 +51,6 @@ public class NumUtil {
         return true;
     }
 
-
-
-
     public boolean isPandigital(long n){
         String nStr = String.valueOf(n);
         int lim = nStr.length();
