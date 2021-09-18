@@ -101,4 +101,12 @@ public class NumUtil {
         return (long) nthFib;
     }
 
+    public long prodFromDigits(String n){
+        long prod = 1;
+        for (int i = 0; i < n.length(); i++) {
+            prod *= Integer.parseInt(n.substring(i, i+1));
+        }
+        return prod;
+    }
+
 }
