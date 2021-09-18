@@ -1,7 +1,8 @@
+//https://projecteuler.net/problem=99
+
 package com.clydefrog04;
 
 import java.io.*;
-import java.math.BigInteger;
 
 public class PE99 {
 

@@ -1,3 +1,5 @@
+//https://projecteuler.net/problem=41
+
 package com.clydefrog04;
 
 import com.clydefrog04.PEUtils.NumUtil;

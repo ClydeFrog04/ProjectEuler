@@ -1,3 +1,5 @@
+//https://projecteuler.net/problem=1
+
 package com.clydefrog04;
 
 public class PE1 {

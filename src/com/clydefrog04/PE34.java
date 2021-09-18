@@ -1,3 +1,5 @@
+//https://projecteuler.net/problem=34
+
 package com.clydefrog04;
 
 import java.util.HashMap;
