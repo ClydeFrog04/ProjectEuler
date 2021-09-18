@@ -91,5 +91,17 @@ public class NumUtil {
         return digits == (1 << count) - 1;
     }
 
+    public long getFibN(int term){
+        //a function to get a fibonacci term rather than generating the entire sequence
+        // maths from people much smarter than me:
+        //http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibFormula.html
+        double sqrt5 = Math.sqrt(5);
+        double Phi = (sqrt5 + 1) / 2;
+        double phi = Phi - 1;
+        double PhiToN = Math.pow(Phi, term);
+        double negphiToN = Math.pow(-phi, term);
+        double nthFib = (PhiToN - negphiToN) / sqrt5;
+        return (long) nthFib;
+    }
 
 }
