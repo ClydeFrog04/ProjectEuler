@@ -43,12 +43,3 @@ public class PE35 {
         }
     }
 }
-/*
-public static void main(String[] args)
-    {
-        String str = "ABC";
-        int n = str.length();
-        Permutation permutation = new Permutation();
-        permutation.permute(str, 0, n-1);
-    }
- */

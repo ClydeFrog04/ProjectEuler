@@ -18,7 +18,6 @@ Find the last ten digits of this prime number.
     public static void main(String[] args) {
         BigInteger x = new BigInteger("28433");
         BigInteger base = new BigInteger("2");
-//        BigInteger exponent = new BigInteger("7830457");
 
         BigInteger product = base.pow(7830457);
         product = x.multiply(product);

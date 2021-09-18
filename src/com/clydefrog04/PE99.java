@@ -11,10 +11,6 @@ public class PE99 {
         try{
             File file = new File("src/files/p099_base_exp.txt");
             BufferedReader fileReader = new BufferedReader(new FileReader(file));
-//            BigInteger max = new BigInteger("0");
-//            BigInteger base;
-//            BigInteger expo;
-//            BigInteger prod;
             long max = 0;
             long maxLine = 0;
             int i = 0;
@@ -31,9 +27,6 @@ public class PE99 {
                     maxLine = i;
                 }
                 i++;
-//                prod = new BigInteger(nums[0]).pow(Integer.parseInt(nums[1]));
-//                System.out.println(line);
-//                System.out.println(prod);
             }
             System.out.println(maxLine);
 
@@ -47,21 +40,4 @@ public class PE99 {
         return (long)baseNum * expo;
 
     }
-
-    /*
-    int maxline = 0;
-double maxnum = 0;
-string[] lines = File.ReadAllLines(filename);
-for (int i = 0; i < lines.Length; i++) {
-    string[] line = lines[i].Split(',');
-    double basenum = Math.Log(Convert.ToInt32(line[0]));
-    int exponent = Convert.ToInt32(line[1]);
-    double number = basenum * exponent;
-    if (number > maxnum) {
-        maxline = i+1;
-        maxnum = number;
-    }
-}
-     */
-
 }
