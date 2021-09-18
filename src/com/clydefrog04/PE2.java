@@ -18,13 +18,6 @@ public class PE2 {
     public static void main(String[] args) {
         NumUtil numUtil = new NumUtil();
 
-        System.out.println(numUtil.getFibN(1));//1
-        System.out.println(numUtil.getFibN(2));//1
-        System.out.println(numUtil.getFibN(3));//2
-        System.out.println(numUtil.getFibN(4));//3
-        System.out.println(numUtil.getFibN(5));//5
-        System.out.println(numUtil.getFibN(6));//8
-
         long sumEven = 0;
 
         int n = 2;
