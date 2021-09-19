@@ -10,7 +10,7 @@ public class NumUtil {
     int limit;
 
     public NumUtil(){
-        this.limit = 1000000;
+        this.limit = 10000000;
         this.sieve = new ArrayList<>();
         generateSieve(limit);
     }
@@ -40,12 +40,12 @@ public class NumUtil {
 
     public boolean isPrime(int n) {//todo: refactor to long, potentially make a bigint/string version as well
         //we have a point where generating a large sieve takes longer than a brute force check, so we compromise
-        if(n > sieve.size()) return forcePrime(n);
+        if(n >= sieve.size()) return forcePrime(n);
         return sieve.get(n) == 1;
     }
 
     private boolean forcePrime(int n){
-        for (int i = 2; i < Math.sqrt(n); i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if(n % i == 0) return false;
         }
         return true;
