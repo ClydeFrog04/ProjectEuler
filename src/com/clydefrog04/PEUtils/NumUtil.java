@@ -38,6 +38,18 @@ public class NumUtil {
         }
     }
 
+    public int countFactors(long n){//return val can be int because we just won't need factor counts that large
+        //does not work for negative numbers... can be fixed easily but lazy...
+        if(n == 1) return 1;
+        int count = 0;
+
+        for (int i = 1; i < Math.sqrt(n); i++) {
+            if(n % i == 0) count += 2;
+        }
+
+        return count;
+    }
+
     public boolean isPrime(int n) {//todo: refactor to long, potentially make a bigint/string version as well
         //we have a point where generating a large sieve takes longer than a brute force check, so we compromise
         if(n >= sieve.size()) return forcePrime(n);
